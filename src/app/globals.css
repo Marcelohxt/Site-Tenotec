@@ -1,9 +1,23 @@
-@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #dfdfdf;        /* Cor de fundo neutra, como cimento claro */
+  --foreground: #1f1f1f;        /* Cor do texto padrão */
+  --primary: #d9822b;           /* Laranja queimado - referência a EPI e construção */
+  --secondary: #6c757d;         /* Cinza sóbrio */
+  --accent: #ffc107;            /* Amarelo sinalização - chama atenção em botões e ícones */
+  --background-dark: #e0e0e0;   /* Fundo alternativo, tom cimento médio */
+  --text-dark: #333333;         /* Texto em áreas claras */
+  --text-light: #ffffff;        /* Texto em áreas escuras */
+  --steel-gray: #4a4a4a;        /* Tom metálico para destacar barras ou containers */
+  --concrete: #999999;          /* Referência visual ao concreto */
+  --success: #28a745;           /* Verde para status positivo */
+  --danger: #dc3545;            /* Vermelho para alertas */
 }
+
 
 @theme inline {
   --color-background: var(--background);
