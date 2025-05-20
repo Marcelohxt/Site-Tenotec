@@ -2,7 +2,6 @@
 const nextConfig = {
   images: {
     domains: ['images.unsplash.com'],
-    unoptimized: true, // Necessário para exportação estática
   },
   // Otimizações para produção
   swcMinify: true,
@@ -20,12 +19,12 @@ const nextConfig = {
   },
   poweredByHeader: false,
   // Configuração para o Docker
-  output: 'export', // Alterado para 'export' para gerar HTML estático
+  // output: 'export', // Removido para deploy dinâmico na Vercel
   // Desabilita links prefetch que podem causar problemas em hospedagem compartilhada
   experimental: {
     scrollRestoration: true,
   },
-  trailingSlash: true, // Ajuda com URLs limpos na hospedagem compartilhada
+  // trailingSlash: true, // Removido para deploy dinâmico na Vercel
 };
 
 module.exports = nextConfig; 

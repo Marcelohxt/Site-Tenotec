@@ -69,7 +69,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl md:text-2xl text-text-light mb-8 max-w-3xl mx-auto font-light tracking-wide leading-relaxed"
           >
-            Reformas e Construções de Alto Padrão
+            Manutenções, Reformas e Construções.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
