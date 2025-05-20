@@ -678,7 +678,7 @@ export default function Home() {
 
         {/* Seção de Contato */}
         <section id="contato" className="py-20 bg-gray-50">
-          <Contact />
+      <Contact />
         </section>
       </section>
     </main>

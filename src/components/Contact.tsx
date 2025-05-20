@@ -5,8 +5,19 @@ import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline
 
 const Contact = () => {
   return (
-    <section id="contato" className="py-20 bg-steel-gray/10">
-      <div className="container mx-auto px-4">
+    <section id="contato" className="py-20 bg-steel-gray/10 relative overflow-hidden">
+      {/* Logo Background */}
+      <div 
+        className="absolute inset-0 z-0 opacity-[0.08]"
+        style={{
+          backgroundImage: "url('/images/logo-background.png')",
+          backgroundSize: 'contain',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      />
+      
+      <div className="container mx-auto px-4 relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

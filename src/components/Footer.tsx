@@ -16,7 +16,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo e Descrição */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">TenoTec</h3>
+            <div className="h-40 w-48 relative">
+              <img 
+                src="/images/logo-background.png" 
+                alt="TenoTec Logo" 
+                className="h-full w-full object-contain mix-blend-multiply"
+              />
+            </div>
             <p className="text-concrete">
               Transformando sonhos em realidade com reformas e construções de alto padrão.
             </p>
