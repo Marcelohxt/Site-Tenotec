@@ -50,7 +50,7 @@ const Contact = () => {
               <div>
                 <h4 className="font-semibold text-foreground">Email</h4>
                 <p className="text-text-dark">contato@tenotec.com.br</p>
-                <p className="text-text-dark">orcamentos@tenotec.com.br</p>
+                <p className="text-text-dark">comercial@tenotec.com.br</p>
               </div>
             </div>
 
