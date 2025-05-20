@@ -96,6 +96,97 @@ npm run build
 yarn build
 ```
 
+## 🚀 Deploy
+
+O projeto está configurado para ser facilmente implantado em vários ambientes. Escolha uma das opções abaixo:
+
+### Deploy Automatizado (Recomendado)
+
+Use o script de deploy automatizado que guiará você pelo processo:
+
+**No Windows:**
+```bash
+deploy.bat
+```
+
+**No Linux/Mac:**
+```bash
+./deploy.sh
+```
+
+### Deploy Manual
+
+#### Vercel (Recomendado para Next.js)
+
+1. Instale a CLI da Vercel:
+```bash
+npm install -g vercel
+```
+
+2. Faça o deploy:
+```bash
+vercel
+```
+
+3. Para ambiente de produção:
+```bash
+vercel --prod
+```
+
+#### Netlify
+
+1. Instale a CLI do Netlify:
+```bash
+npm install -g netlify-cli
+```
+
+2. Faça o deploy:
+```bash
+netlify deploy
+```
+
+3. Para ambiente de produção:
+```bash
+netlify deploy --prod
+```
+
+#### Deploy para Hostgator
+
+Para fazer deploy em hospedagem compartilhada como a Hostgator:
+
+1. Prepare os arquivos:
+```bash
+npm run deploy-hostgator
+```
+
+2. Faça upload dos arquivos para a Hostgator usando cPanel ou FTP.
+
+3. Para instruções detalhadas, veja o [Guia de Deploy na Hostgator](./docs/deploy-hostgator.md).
+
+#### Deploy com Docker
+
+1. Construa a imagem:
+```bash
+docker build -t tenotec-website .
+```
+
+2. Execute o contêiner:
+```bash
+docker run -p 3000:3000 tenotec-website
+```
+
+#### Servidor Próprio
+
+1. Gere a build de produção:
+```bash
+npm run build
+```
+
+2. Inicie o servidor:
+```bash
+npm run start
+```
+
 ## 📝 Modificando o Conteúdo
 
 ### Alterando Textos

@@ -114,7 +114,7 @@ export default function Home() {
                 description: "Oferecemos soluções integradas para todas as necessidades de manutenção predial, garantindo segurança, eficiência e valorização do seu imóvel. Atuamos em serviços elétricos, hidráulicos, estruturais, pintura, limpeza e reparos em fachadas, com equipe especializada e materiais de alta qualidade. Conte com a TenoTec para manter seu patrimônio sempre funcional, seguro e esteticamente impecável."
               },
               {
-                title: "Construção de Alto Padrão",
+                title: "Construções",
                 description: "Projetos exclusivos e personalizados que unem design sofisticado, materiais nobres e tecnologia de ponta para transformar sonhos em realidade. Com a TenoTec, sua construção ganha qualidade superior, acabamento impecável e total atenção aos detalhes, garantindo imóveis que impressionam e valorizam o seu investimento."
               }
             ].map((service, index) => (
@@ -247,6 +247,90 @@ export default function Home() {
                   Inove com a TenoTec
                 </a>
                 
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Nosso Escritório Section */}
+      <section id="escritorio" className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="max-w-4xl mx-auto"
+          >
+            <motion.h2 
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              className="text-4xl font-bold text-center mb-8 text-foreground"
+            >
+              Nosso Escritório
+            </motion.h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                className="space-y-6"
+              >
+                <h3 className="text-2xl font-semibold text-primary">
+                  Localização Privilegiada
+                </h3>
+                <p className="text-text-dark leading-relaxed">
+                  Nosso escritório está estrategicamente localizado na Avenida Paulista, 
+                  o coração financeiro e cultural de São Paulo. Esta localização privilegiada 
+                  nos permite estar próximos aos principais centros de negócios e oferecer 
+                  um atendimento de excelência aos nossos clientes.
+                </p>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <span className="text-primary text-xl">📍</span>
+                    <p className="text-text-dark">Av. Paulista, 1636 - Paulista Corporate - Cerqueira Cesar, São Paulo - SP</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-primary text-xl">🏢</span>
+                    <p className="text-text-dark">Escritório moderno e bem estruturado</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-primary text-xl">🚇</span>
+                    <p className="text-text-dark">Fácil acesso por transporte público</p>
+                  </div>
+                </div>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl"
+              >
+                <AnimatePresence mode="wait">
+                  <motion.img
+                    key={current}
+                    src={`/images/${current === 0 ? 'office-main.jpg' : 'office-workstation.jpg'}`}
+                    alt="Escritório TenoTec"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="w-full h-full object-cover"
+                  />
+                </AnimatePresence>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                
+                {/* Navigation Dots */}
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                  {[0, 1].map((index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrent(index)}
+                      className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                        current === index ? 'bg-white scale-125' : 'bg-white/50'
+                      }`}
+                    />
+                  ))}
+                </div>
               </motion.div>
             </div>
           </motion.div>

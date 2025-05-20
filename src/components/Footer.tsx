@@ -39,7 +39,7 @@ const Footer = () => {
                  className="text-concrete hover:text-accent transition-colors w-8 h-8 flex items-center justify-center rounded-full border border-concrete hover:border-accent">
                 <FaTiktok size={18} />
               </a>
-              <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" 
+              <a href="https://br.pinterest.com/TenotecServicos/" target="_blank" rel="noopener noreferrer" 
                  className="text-concrete hover:text-accent transition-colors w-8 h-8 flex items-center justify-center rounded-full border border-concrete hover:border-accent">
                 <FaPinterestP size={18} />
               </a>
@@ -64,7 +64,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="text-concrete">Reformas Completas</li>
               <li className="text-concrete">Manutenções</li>
-              <li className="text-concrete">Construção de Alto Padrão</li>
+              <li className="text-concrete">Construções</li>
               <li className="text-concrete">Consultoria</li>
             </ul>
           </div>
@@ -75,8 +75,8 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="text-concrete">contato@tenotec.com.br</li>
               <li className="text-concrete">(11) 91052-1536</li>
-              <li className="text-concrete">Av. Paulista, 1000</li>
-              <li className="text-concrete">São Paulo - SP</li>
+              <li className="text-concrete">Av. Paulista, 1636 Paulista Corporate</li>
+              <li className="text-concrete">Cerqueira Cesar, São Paulo - SP, 01310-200</li>
             </ul>
           </div>
         </div>
@@ -87,6 +87,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="text-center text-concrete">
           <p>&copy; {new Date().getFullYear()} TenoTec. Todos os direitos reservados.</p>
+          <p className="mt-2">CNPJ: 35.577.183/0001-97</p>
         </div>
       </div>
     </footer>
