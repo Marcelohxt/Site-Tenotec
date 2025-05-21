@@ -43,7 +43,7 @@ const Navbar = () => {
           </div>
 
           {/* Menu Mobile/Tablet */}
-          {isOpen && (
+          {/* {isOpen && (
             <div className="lg:hidden absolute top-20 left-0 w-full space-y-2 bg-neutral-900 shadow-lg p-4">
               {menuItems.map((item) => (
                 <a
@@ -55,7 +55,7 @@ const Navbar = () => {
                 </a>
               ))}
             </div>
-          )}
+          )} */}
 
           {/* Desktop Menu */}
             <div className="hidden lg:flex space-x-8 justify-center mt-2">
@@ -78,7 +78,11 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="text-black"
             >
-              <Bars3Icon className="h-6 w-6" />
+              {isOpen ? (
+                <XMarkIcon className="h-6 w-6" />
+              ) : (
+                <Bars3Icon className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>
