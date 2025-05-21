@@ -78,10 +78,10 @@ const Navbar = () => {
             </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-accent"
+              className="text-black"
             >
               {isOpen ? (
                 <XMarkIcon className="h-6 w-6" />
