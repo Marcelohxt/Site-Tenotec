@@ -48,12 +48,12 @@ const Navbar = () => {
 
           {/* Menu Mobile/Tablet */}
           {isOpen && (
-            <div className="lg:hidden mt-4 space-y-2 bg-white rounded-lg shadow-lg p-4">
+            <div className="lg:hidden absolute top-20 left-0 w-full space-y-2 bg-neutral-900 shadow-lg p-4">
               {menuItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block text-black text-lg font-medium hover:text-accent transition-colors"
+                  className="block text-white text-lg font-medium hover:text-accent transition-colors"
                 >
                   {item.name}
                 </a>
