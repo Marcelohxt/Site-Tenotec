@@ -1,5 +1,8 @@
 "use client";
 
+
+
+
 import { motion } from 'framer-motion';
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline';
 
@@ -60,8 +63,8 @@ const Contact = () => {
               <EnvelopeIcon className="h-6 w-6 text-primary mt-1" />
               <div>
                 <h4 className="font-semibold text-black">Email</h4>
-                <p className="text-text-black">contato@tenotec.com.br</p>
-                <p className="text-text-black">comercial@tenotec.com.br</p>
+                <p className="text-black">contato@tenotec.com.br</p>
+                <p className="text-black">comercial@tenotec.com.br</p>
               </div>
             </div>
 
