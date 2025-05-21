@@ -33,12 +33,12 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             className="space-y-8"
           >
-            <h3 className="text-2xl font-semibold mb-6 text-foreground">Informações de Contato</h3>
+            <h3 className="text-2xl font-semibold mb-6 text-black">Informações de Contato</h3>
             
             <div className="flex items-start space-x-4">
               <PhoneIcon className="h-6 w-6 text-primary mt-1" />
               <div>
-                <h4 className="font-semibold text-foreground">Telefone</h4>
+                <h4 className="font-semibold text-black">Telefone</h4>
                 <p className="text-text-dark mt-1">(11) 2110-2954</p>
                 <a href="https://wa.me/5511910521536?text=Olá!%20Gostaria%20de%20Inovar%20" target="_blank" rel="noopener noreferrer" className="flex items-center text-text-dark hover:text-primary transition-colors">
                   <span>(11) 91052-1536</span>
@@ -59,7 +59,7 @@ const Contact = () => {
             <div className="flex items-start space-x-4">
               <EnvelopeIcon className="h-6 w-6 text-primary mt-1" />
               <div>
-                <h4 className="font-semibold text-foreground">Email</h4>
+                <h4 className="font-semibold text-black">Email</h4>
                 <p className="text-text-dark">contato@tenotec.com.br</p>
                 <p className="text-text-dark">comercial@tenotec.com.br</p>
               </div>
@@ -68,7 +68,7 @@ const Contact = () => {
             <div className="flex items-start space-x-4">
               <MapPinIcon className="h-6 w-6 text-primary mt-1" />
               <div>
-                <h4 className="font-semibold text-foreground">Endereço</h4>
+                <h4 className="font-semibold text-black">Endereço</h4>
                 <p className="text-text-dark">Av. Paulista, 1636 - Sala 1105-2128- Paulista Corporate</p>
                 <p className="text-text-dark">Cerqueira Cesar, São Paulo - SP</p>
                 <p className="text-text-dark">CEP: 01310-200</p>
@@ -76,7 +76,7 @@ const Contact = () => {
             </div>
 
             <div className="pt-6">
-              <h4 className="font-semibold mb-4 text-foreground">Horário de Atendimento</h4>
+              <h4 className="font-semibold mb-4 text-black">Horário de Atendimento</h4>
               <p className="text-text-dark">Segunda a Sexta: 8h às 18h</p>
               <p className="text-text-dark">Sábado: 9h às 13h</p>
             </div>
@@ -93,50 +93,50 @@ const Contact = () => {
           >
             <form className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-foreground">
+                <label htmlFor="name" className="block text-sm font-medium text-black">
                   Nome
                 </label>
                 <input
                   type="text"
                   id="name"
                   name="name"
-                  className="mt-1 block w-full rounded-md border-secondary shadow-sm focus:border-primary focus:ring-primary bg-background-dark text-foreground"
+                  className="mt-1 block w-full rounded-md border-secondary shadow-sm focus:border-primary focus:ring-primary bg-background-dark text-black"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-foreground">
+                <label htmlFor="email" className="block text-sm font-medium text-black">
                   Email
                 </label>
                 <input
                   type="email"
                   id="email"
                   name="email"
-                  className="mt-1 block w-full rounded-md border-secondary shadow-sm focus:border-primary focus:ring-primary bg-background-dark text-foreground"
+                  className="mt-1 block w-full rounded-md border-secondary shadow-sm focus:border-primary focus:ring-primary bg-background-dark text-black"
                 />
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-foreground">
+                <label htmlFor="phone" className="block text-sm font-medium text-black">
                   Telefone
                 </label>
                 <input
                   type="tel"
                   id="phone"
                   name="phone"
-                  className="mt-1 block w-full rounded-md border-secondary shadow-sm focus:border-primary focus:ring-primary bg-background-dark text-foreground"
+                  className="mt-1 block w-full rounded-md border-secondary shadow-sm focus:border-primary focus:ring-primary bg-background-dark text-black"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-foreground">
+                <label htmlFor="message" className="block text-sm font-medium text-black">
                   Mensagem
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   rows={4}
-                  className="mt-1 block w-full rounded-md border-secondary shadow-sm focus:border-primary focus:ring-primary bg-background-dark text-foreground"
+                  className="mt-1 block w-full rounded-md border-secondary shadow-sm focus:border-primary focus:ring-primary bg-background-dark text-black"
                 ></textarea>
               </div>
 
