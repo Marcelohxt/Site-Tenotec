@@ -33,16 +33,12 @@ const Navbar = () => {
           </motion.div>
           {/* Botão do menu mobile/tablet */}
           <div className="lg:hidden flex justify-between items-center">
-            <div className="text-xl font-bold text-black">Teno Tec</div>
+            <div className="hidden md:block text-xl font-bold text-black">Teno Tec</div>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-black"
             >
-              {isOpen ? (
-                <XMarkIcon className="h-6 w-6" />
-              ) : (
-                <Bars3Icon className="h-6 w-6" />
-              )}
+              <Bars3Icon className="h-6 w-6" />
             </button>
           </div>
 
@@ -82,11 +78,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="text-black"
             >
-              {isOpen ? (
-                <XMarkIcon className="h-6 w-6" />
-              ) : (
-                <Bars3Icon className="h-6 w-6" />
-              )}
+              <Bars3Icon className="h-6 w-6" />
             </button>
           </div>
         </div>
