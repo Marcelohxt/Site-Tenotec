@@ -18,7 +18,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed w-full z-50 bg-white/80 shadow-md">
+    <nav className="fixed w-full z-50 bg-white/90 shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -76,7 +76,6 @@ const Navbar = () => {
                 </motion.a>
               ))}
             </div>
-
           {/* Mobile Menu Button */}
           <div className="lg:hidden">
             <button
