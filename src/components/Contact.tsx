@@ -5,7 +5,7 @@ import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline
 
 const Contact = () => {
   return (
-    <section id="contato" className="py-20 bg-steel-gray/10 relative overflow-hidden">
+    <section id="contato" className="py-20 bg-gray-200 relative overflow-hidden">
       {/* Logo Background */}
       <div 
         className="absolute inset-0 z-0 opacity-[0.08]"
@@ -86,7 +86,10 @@ const Contact = () => {
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            className="bg-background p-8 rounded-lg shadow-lg"
+            className="bg-gradient-to-r from-[var(--primary)] via-[var(--accent)] to-[var(--concrete)] p-6 rounded-2xl shadow-xl text-[var(--text-dark)] transition duration-300 hover:brightness-105"
+
+
+
           >
             <form className="space-y-6">
               <div>

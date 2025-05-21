@@ -63,7 +63,7 @@ export default function Suppliers() {
           <motion.div 
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            className="bg-white rounded-lg shadow-lg p-8"
+            className="bg-gray-200 rounded-lg shadow-lg p-8"
           >
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
               Cadastre-se como Fornecedor
