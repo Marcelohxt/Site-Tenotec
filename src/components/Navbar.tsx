@@ -52,7 +52,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-black hover:text-gray-700"
+              className="text-white hover:text-accent"
             >
               {isOpen ? (
                 <XMarkIcon className="h-6 w-6" />
