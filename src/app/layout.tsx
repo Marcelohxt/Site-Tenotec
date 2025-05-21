@@ -12,9 +12,9 @@ export const viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "TenoTec - Reformas e Construções de Alto Padrão",
-  description: "Transformando sonhos em realidade com manutenções, reformas e construções de alto padrão. Manutenções, reformas completas e muito mais.",
-  keywords: "construção, reforma, alto padrão, engenharia, arquitetura, projetos, São Paulo",
+  title: "TenoTec - Reformas e Construções",
+  description: "Transformando sonhos em realidade com manutenções, reformas e construções. Manutenções, reformas completas e muito mais.",
+  keywords: "construção, reforma, engenharia, arquitetura, projetos, São Paulo",
   authors: [{ name: "TenoTec" }],
   creator: "TenoTec",
   publisher: "TenoTec",
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: "TenoTec - Reformas e Construções de Alto Padrão",
-    description: "Transformando sonhos em realidade com reformas e construções de alto padrão.",
+    title: "TenoTec - Reformas e Construções ",
+    description: "Transformando sonhos em realidade com reformas e construções.",
     url: 'https://tenotec.com.br',
     siteName: 'TenoTec',
     locale: 'pt_BR',
