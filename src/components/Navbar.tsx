@@ -25,10 +25,9 @@ const Navbar = () => {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex items-center text-2xl font-bold text-foreground"
+            className="flex items-center text-2xl font-bold text-black"
           >
-            <span className="text-primary mr-1">Teno</span>
-            <span className="text-accent">Tec</span>
+            <span className="text-primary mr-1">TenoTec</span>
             <span className="ml-1 text-sm bg-primary text-text-light px-1 rounded-sm">®</span>
           </motion.div>
           
