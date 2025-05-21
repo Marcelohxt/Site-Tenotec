@@ -24,7 +24,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-concrete">
-              Transformando sonhos em realidade com reformas e construções de alto padrão.
+              Transformando sonhos em realidade com manutenções, reformas e construções de alto padrão.
             </p>
             
             {/* Social Media Links */}

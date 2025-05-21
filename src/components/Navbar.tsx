@@ -65,25 +65,28 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -0 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="md:hidden"
-          >
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-neutral-900 rounded-lg shadow-lg mt-2">
-              {menuItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="block px-3 py-2 text-white hover:text-accent hover:bg-neutral-800 rounded-md"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </a>
-              ))}
-            </div>
-          </motion.div>
-        )}
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3 }}
+              className="md:hidden"
+            >
+              <div className="mx-4 mt-3 rounded-xl bg-neutral-900 shadow-xl ring-1 ring-neutral-800">
+                <nav className="flex flex-col space-y-2 p-4">
+                  {menuItems.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      onClick={() => setIsOpen(false)}
+                      className="rounded-md px-4 py-2 text-sm font-medium text-white hover:bg-neutral-800 hover:text-[var(--accent)] transition duration-200"
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                </nav>
+              </div>
+            </motion.div>
+          )}
       </div>
     </nav>
   );
