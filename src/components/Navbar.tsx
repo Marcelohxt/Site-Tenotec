@@ -31,52 +31,28 @@ const Navbar = () => {
             <span className="text-accent">Tec</span>
             <span className="ml-1 text-sm bg-primary text-text-light px-1 rounded-sm">®</span>
           </motion.div>
-          {/* Botão do menu mobile/tablet */}
-          <div className="lg:hidden flex justify-between items-center">
-            <div className="hidden md:block text-xl font-bold text-black">Teno Tec</div>
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-black"
-            >
-              <Bars3Icon className="h-6 w-6" />
-            </button>
+          
+          {/* Desktop Menu */}
+          <div className="hidden md:flex space-x-8">
+            {menuItems.map((item) => (
+              <motion.a
+                key={item.name}
+                href={item.href}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="relative group text-secondary hover:text-foreground transition-colors"
+              >
+                {item.name}
+                <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-[var(--accent)] transition-all duration-300 ease-out group-hover:w-full"></span>
+              </motion.a>
+            ))}
           </div>
 
-          {/* Menu Mobile/Tablet */}
-          {/* {isOpen && (
-            <div className="lg:hidden absolute top-20 left-0 w-full space-y-2 bg-neutral-900 shadow-lg p-4">
-              {menuItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="block text-white text-lg font-medium hover:text-accent transition-colors"
-                >
-                  {item.name}
-                </a>
-              ))}
-            </div>
-          )} */}
-
-          {/* Desktop Menu */}
-            <div className="hidden lg:flex space-x-8 justify-center mt-2">
-              {menuItems.map((item) => (
-                <motion.a
-                  key={item.name}
-                  href={item.href}
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="relative group text-black hover:text-accent transition-colors"
-                >
-                  {item.name}
-                  <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-[var(--accent)] transition-all duration-300 ease-out group-hover:w-full"></span>
-                </motion.a>
-              ))}
-            </div>
           {/* Mobile Menu Button */}
-          <div className="lg:hidden">
+          <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-black"
+              className="text-white hover:text-accent"
             >
               {isOpen ? (
                 <XMarkIcon className="h-6 w-6" />
@@ -99,7 +75,7 @@ const Navbar = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 text-black hover:text-accent hover:bg-neutral-800 rounded-md"
+                  className="block px-3 py-2 text-white hover:text-accent hover:bg-neutral-800 rounded-md"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
