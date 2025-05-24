@@ -374,13 +374,13 @@ export default function Home() {
                     <svg className="h-6 w-6 text-primary mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Análise de custo-benefício em tempo real</span>
+                    <span>Análise de custo-benefício.</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-primary mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Previsão precisa de prazos e orçamentos</span>
+                    <span>Previsão de prazos e orçamentos</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-primary mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
